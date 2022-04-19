@@ -260,3 +260,31 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 
 ## Agile Project Management
 
+### Scrum
+
+![scrum](./img/013-scrum.jpg)
+
+* Agile methoud focusing on managing iterative development rather than agile practices
+
+* "product backlog": a "TODO list", may be feature definitions, SW. requirements, user stories, supplementary tasks (e.g user documentation, architecture definition), etc.
+
+* "scrum"s: daily meetings reviewing progress and daily tasks, ideally short f2f meeting including whole team
+
+* "velocity": estimate of backlog covering rate of the team
+
+* 3 phases:
+    * Initial: plan outline, establish objectives (choose from backlog), design architecture
+    * "Sprint cycles" of developing increments
+        * fixed length (~2-4 weeks) 
+    * Project closure: wrap-up & complete documentation (e.g system help frames)
+
+* Team is isolated from distractions & customer communication. Only the "scrum master" handles communication with the customer.
+
+* Benefits:
+    * Breaks down product into managable chunks
+    * Unstable requirements do not hold up
+    * Whole team has visibility on everything
+    * Customers see on-time increment delivery, can provide feedback
+        * Establishes customer-developer trust
+
+
