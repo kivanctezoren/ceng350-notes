@@ -75,7 +75,7 @@ Often, elements from both approaches are used.
 
 ### The Waterfall Model
 
-![waterfall](waterfall.jpg)
+![waterfall](./img/001-waterfall.jpg)
 
 * Plan-driven
 
@@ -88,7 +88,7 @@ Often, elements from both approaches are used.
 
 ### Incremental Development
 
-![incrdev](002-incrdev.jpg)
+![incrdev](./img/002-incrdev.jpg)
 
 * Cost of making changes reduced
 
@@ -102,7 +102,7 @@ Often, elements from both approaches are used.
 
 ### Integration & Configuration (Reuse-oriented SW. Eng.)
 
-![reuse](003-reuse.jpg)
+![reuse](./img/003-reuse.jpg)
 
 * Based on software reuse - reused elements can be configured according to requirements
 * Standard approach for many business system types
@@ -120,3 +120,38 @@ Often, elements from both approaches are used.
 * Can be ordered sequentially or interleaved according to the model
 
 ### Requirements Engineering Process
+
+![reqeng](./img/004-reqeng.jpg)
+
+### Software Design & Implementation
+
+![designimp](./img/005-designimp.jpg)
+
+* Design: Creating software structure
+    * Architectural, database, interface (between components), component selection & design
+* Implementation: translating the structure into an executable
+    * Design & implementation can be closely related or interleaved
+
+### Software Validation
+* Testing: Most common verification & validation activity
+
+![vv](./img/006-vv.jpg)
+
+* V-model: Testing phases in a plan-driven software process:
+
+![vv2](./img/007-vv2.jpg)
+
+### System Evolution
+
+![sysevl](./img/008-sysevl.jpg)
+
+---
+
+* Change anticipation: Possible changes can be anticipated without much rework
+* Change tolerance: Process is designed so that changes are applied without much cost
+
+### Software Prototyping
+
+![proto](./img/009-proto.jpg)
+
+
