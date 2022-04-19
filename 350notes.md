@@ -188,4 +188,75 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
     4) Managed: Defined & used quality management strategies
     5) Optimising: Defined & used process improvement procedures
 
+# CH3 - Agile SW Development
+
+![agile1](./img/011-agile1.jpg)
+
+* Program specification, design and implementation are inter-leaved
+
+* The system is developed as a series of versions or increments with stakeholders involved in version specification and evaluation
+
+* Frequent delivery of new versions for evaluation
+
+* Extensive tool support (e.g. automated testing tools) used to support development.
+
+* The aim is to reduce overheads in the SW process, to be able do respond quickly to changing requirements without excessive rework.
+    * e.g Minimal documentation - focus on working code
+
+## Principles
+
+* Customer involvement: Evaluating iterations, provide and prioritize requirements
+
+* Incremental delivery
+
+* People over processes: Skill of the team should be recognized - members should develop their own ways of working without prescripted processes
+
+* Embrace change
+
+* Maintain simplicity
+
+## Agile development techniques
+
+### Extreme programming (XP)
+
+![exp](./img/012-exp.jpg "XP release cycle")
+
+* "Extreme" iterative development:
+    * New versions may be built several times per day
+    * Increments are delivered to customers every 2 weeks
+    * All tests must be run for every build and the build is only accepted if tests run successfully.
+
+* Has a technical focus - usually not easy to integrate with management practice
+
+* XP practices:
+    * Incremental planning: Requirements recorded onto "story cards" -> Broken down into "Tasks"
+
+    * Minimal useful set of functionality is developed first, frequent small releases. Functionality added incrementally.
+
+    * Minimum design to satisfy current requirements is carried out
+
+    * Test-first development: A functionality's test framework is implemented earlier than the functionality itself
+
+    * Constant refactoring: All developers are expected to refactor code as soon as possible, even if there is no immediate need
+        * Improves software understandability & reduces need for documentation
+        * Well-structured code -> Changes are easier to make
+        * Changes requiring architecture refactoring are much more expensive
+
+    * Collective ownership: Everyone works on everything, no islands of expertise develop
+
+    * Pair programming
+        * Helps develop collective ownership
+        * Informal review process
+        * Encourages refactoring & sharing of knowledge
+
+    * Continuous integration: After each task is completed, it is integrated & tested (must pass the test)
+        * Test-drivent development clarifies the requirements to be implemented
+        * Tests are written as programs rather than data -> they can be executed automatically after integrating each new functionality
+
+    * The customer should be available full-time as a member of the development team
+        * Customer may be reluctant - may feel that providing requirements was enough
+
+    * Large amounts of overtime are not acceptable: Reduces productivity & quality on long term
+
+## Agile Project Management
 
