@@ -1,4 +1,4 @@
-# CH1 – Introduction
+# CH1 - Introduction
 
 * **Software:** Computer programs & associated documentation
 
@@ -156,7 +156,36 @@ Often, elements from both approaches are used.
 
 * Discarded after development: usually unstructured, undocumented and not standard-compliant
 
-### Incremental Delivery
+### Incremental Development & Delivery
 
 ![incrdev](./img/010-incrdev.jpg)
-...
+
+* Early increments serve as prototypes
+
+* Requirements are not changed throughout the development of an increment
+
+* Highest priority services receive most testing
+
+* Specification is developed toghether with the SW itself
+    * May contradict procurement models of some organizations
+
+## Process Improvement
+
+* Process maturity approach: ?
+Agile approach: focus on iterative development & reduction of overheads. Emphasis on rapid functionality delivery & adapting to requirement changes
+
+* improvement cycle: Change -> Measure -> Analyze -> Change ...
+
+* Process metrics:
+    * Taken time to complete activities
+    * Required resources for activities
+    * Number of occurrences of a specific event (e.g. an error)
+
+* SEI capability maturity model:
+    1) Initial: uncontrolled
+    2) Repeatable: Defined & used product management procedures
+    3) Defined: Defined & used process management procedures
+    4) Managed: Defined & used quality management strategies
+    5) Optimising: Defined & used process improvement procedures
+
+
