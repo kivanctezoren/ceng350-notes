@@ -154,4 +154,9 @@ Often, elements from both approaches are used.
 
 ![proto](./img/009-proto.jpg)
 
+* Discarded after development: usually unstructured, undocumented and not standard-compliant
 
+### Incremental Delivery
+
+![incrdev](./img/010-incrdev.jpg)
+...
