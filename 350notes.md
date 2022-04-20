@@ -250,7 +250,7 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
         * Encourages refactoring & sharing of knowledge
 
     * Continuous integration: After each task is completed, it is integrated & tested (must pass the test)
-        * Test-drivent development clarifies the requirements to be implemented
+        * Test-driven development clarifies the requirements to be implemented
         * Tests are written as programs rather than data -> they can be executed automatically after integrating each new functionality
 
     * The customer should be available full-time as a member of the development team
@@ -264,7 +264,7 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 
 ![scrum](./img/013-scrum.jpg)
 
-* Agile methoud focusing on managing iterative development rather than agile practices
+* Agile method focusing on managing iterative development rather than agile practices
 
 * "product backlog": a "TODO list", may be feature definitions, SW. requirements, user stories, supplementary tasks (e.g user documentation, architecture definition), etc.
 
@@ -286,5 +286,55 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
     * Whole team has visibility on everything
     * Customers see on-time increment delivery, can provide feedback
         * Establishes customer-developer trust
+
+## Scaling Up Agile Methods
+
+* Agile methods are successful for small & medium sized projects with small teams
+    * "Scaling up": Agile methods for large SW systems with large teams
+    * "Scaling out": Introducing agile methods to a large, experienced organization
+
+### Practical problems
+
+* Agile is informal -> incompatible with legal approach to contracts in large companies
+
+* Agile is more approporiate for new software rather than maintenance
+    * In large companies usually: Maintenance cost > development cost
+
+* Agile is more approporiate for small co-located teams
+    * SW development involves worldwide distributed teams
+    * Design documents may be needed for distributed teams
+        * If not available: IDE support for visualisation & program analysis is essential
+    * Cross-team communication mechanisms are needed
+
+* Agile works best when team has high skill level, but large companies have a wide range of skill level
+
+* Software contracts are based around specifications; however, agile interleaves specification and development
+    * Contract based on time rather than functionality is required for agile -> considered risky
+
+* Maintenance problems:
+    * Lack of SW documentation
+        * Also needed if system is subject to external regulation
+    * Customers are kept involved in development
+        * Diverse set of stakeholders in large systems -> hard to involve them all in development
+    * Need to keep the original team
+        * Problem for long-lifetime systems
+
+* Prioritizing changes may be difficult: Multiple stakeholders have different priorities
+
+* Incremental delivery: Can be hard for business planning and marketing
+
+---
+
+* Several integrated systems: Significant amount of development on system configuration rather than development
+
+* Completely incremental approach to requirements engineering is impossible
+
+* Continuous integration practically impossible. However, frequent system builds & regular releases are essential
+
+* Multi-team Scrum:
+    * Releases are aligned
+    * Each team has their own scrum masters and product owners
+    * Each team chooses "product architect"s to design & evolve overall system architecture
+    * "scrum of scrums" are done where representatives of each team meet and discuss progress
 
 
