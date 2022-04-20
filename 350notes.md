@@ -537,4 +537,57 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 
 ## Interaction Models
 
+* Use-case and sequence diagrams may be used to model inter-system and inter-component interactions
+
+### Use-case Diagrams
+
+* Each use case represents a discrete task that involves external interaction with a system
+    * Actors in a use case may be people or other systems
+    * Represented as a diagram for overview and also in a more detailed textual form
+
+### Sequence Diagrams
+
+* Part of UML showing sequence of interactions taking place during a particular use-case
+
+## Structural Models
+
+* Display system organization in terms of its components and their relationships
+
+* Static models: show structure of system design, dynamic models: show system organization during execution
+
+* Created when system architecture is being created & discussed
+
+### Class Diagrams
+
+* Object Class: General definitiob of one kind of system obejct
+    * During early stages of SW engineering: objects represent an entity in the real world
+
+![class](./img/017-class.jpg)
+
+* Generalization: Base class - Derived class relation
+
+![generalization](./img/018-generalization.jpg)
+
+* Aggregation association: Class is composed of other classes
+    * Subclasses do not depend on aggregating class to be able to exist - similar to an "array - array element" relation
+
+![aggr](./img/019-aggr.jpg)
+
+## Behavioral models
+
+* Models a system's dynamic behavior during execution
+    * Show expected response to environmental stimulus
+
+* Types of environmental stimuli:
+    * Data: input to be processed by system
+    * Events: Trigger system processing
+        * May or may not have associated data
+
+* Data-driven models: Show sequence of actions in processing input & generating associated output
+    * Most busines systems are data-driven, minimal external event processing
+    * Shows end-to-end processing in a system -> Useful in req.s analysis
+
+* Event-driven models: Shows system's response to external & internal events
+    * Most real-time systems are event-driven, minimal data processing
+
 
