@@ -493,3 +493,48 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
     * Tool support
 
 ![reqchg](./img/016-reqchg.jpg)
+
+# CH5 - System Modeling
+
+* Representing system using a graphial notation - almost always based on UML
+
+* Models of existing systems are used during req. eng. to clarify its purpose & as a basis for strengths and weaknesses -> Lead to req.s for new system
+
+* Models of new systems are used during req. eng. to explain req.s to other stakeholders
+    * Engineers use it to discuss design proposals & document system for implementation
+
+* Model driven engineering: Possible to implement system (partially or completely) from model
+
+### System Perspectives
+
+* External perspective: Model context or environment
+* Interaction perpective: Model interactions between system & environment or between system components
+* Structural perspective: Model organization of system or the structure of processed data
+* Behavioral perspective: Model how the system responds to events
+
+### UML Diagram Types
+
+* Activity diagrams
+
+* Use-case diagrams: Shows system - environment interactions
+
+* Sequence diagrams: Shows actor - system interactions and interactions between system components
+
+* Class diagrams: Shows object classes and the associations inbetween
+
+* State diagrams: Shows the system's reactions to internal & external events
+
+## Context Models
+
+* Shows system's operational context & boundaries
+    * Social and organizational concerns affects the boundary
+    * Boundary position profoundly affects system req.s
+    * Simply shows other systems in the environment, not how it is used or developed
+        * Process models show how they are used
+            * UML Activity diagrams may be used to define process models
+
+* Architectural model: Shows relationship among systems
+
+## Interaction Models
+
+
