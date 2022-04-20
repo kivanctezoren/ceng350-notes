@@ -348,6 +348,7 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
     * Dual function: May be the basis for a bid for a contract or for the contract itself
 
 * User requirements: Statements in natural language + diagrams of services & operational constraints
+    * Must be understandable by the end-users & customers without technical knowledge
 
 * System requirements: Structured document, detailed descriptions of system functions, services, operational constraints.
     * Defines things to be implemented -> May be a part of a contract
@@ -375,6 +376,15 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
     * Timing constraints, development process constraints, standards, etc.
     * Often apply to the system as a whole, rather than individiual features
     * May be more critical than functional requirements
+    * May be difficult to state precisely, which may be difficult to verify
+        * "Goals" (general intentions of the user) can be specified instead
+        * A "verifiable nonfunc. req." uses some measure that can be tested objectively
+            * Speed: operation time, response time, refresh rate etc.
+            * Size
+            * Ease of use
+            * Reliability: Failure rate, availability etc.
+            * Robustness: Recovery from failure
+            * Portability: Target-dependent statement rate
     * A single nonfunc. requirements may generate several related
     * Product requirements: execution speed, reliability etc.
     * Organizational requirements: Consequence of organizational policies & procedures (e.g standards, implementation requirements etc.)
@@ -389,4 +399,45 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
     * Consistency: No conflicts in the descriptions of the system facilities
     * Complexity of environment & system -> impossible to produce a complete and consistent requirements document
 
+## Requirements Engineering Process
 
+* An iterative activity in which req. elicititaion, analysis, validation and management are interleaved
+
+### Req.s Elicitation / Discovery
+
+* Technical staff works with stakeholders to find out about application domain, system services & system's operational constraints
+
+* Stages (in a cycle):
+    * Req.s discovery
+        * Getting info. from stakeholders about the required & existing systems
+            * Interviewing:
+                * closed (pre-determined questions) or open, or mixed
+                * Not good for understanding domain requirements
+            * Ethnography: Social scientist analyzing how people work
+            ![etno](./img/015-etno.jpg)
+                * Important social & organizational factors can be observed
+                * Effective for understanding existing processes
+                * Cannot identify new features to be added to a system
+        * Specifying user & system requirements from the gathered info.
+    * Req.s classification & organization
+    * Req.s prioritization & negotiation
+        * Conflicts are resolved here
+    * Req.s specification
+        * Req.s are documented here
+
+* Problems:
+    * Stakeholders may have unstable decisions
+    * Stakeholders express req.s in their own terms
+    * Stakeholders' req.s may conflict
+    * Organizational & political factors may influence the req.s
+    * Stakeholders & business environment may change -> Req.s change during analysis process
+
+* User stories: Real-life system usage examples
+    * Practical situation -> stakeholders can relate and comment
+
+* Scenarios: Structured form of user stories
+    * Should include starting situation, normal event flow, what can go wrong, state when scenario finishes, other concurrent activities
+
+### Requirements specification
+
+* Process of documenting the req.s
