@@ -441,3 +441,55 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 ### Requirements specification
 
 * Process of documenting the req.s
+
+* Requirements are written using natural language + diagrams & tables
+* Problems with NL:
+    * Lack of clarity: Hard to be precise without being complex
+    * Functional & nonfunc. req.s may get mixed up
+    * Several req.s can be expressed together
+
+* Form-based specifications: Definition of function/entity, description of inputs, outputs, computations, pre & post conditions, any side effects of the function
+
+* Tabular specification: Supplements NL
+    * Useful when there are alternative courses of action
+
+* Use-cases: Identifies an interaction and involved actors
+    * A set of use-cases should describe all possible interactions with the system
+
+* SW Req. document should describe "what" the system should do rather than "how" it should do
+
+* Incremental development -> Less detail in req.s document
+
+## Requirements Validation
+
+* Validating that the requirements define the system that the customer really wants
+
+* Important: Errors in req.s are costly
+
+* Check:
+    * Validity (whether system provides func.s tht best supports customer's needs)
+    * Consistency
+    * Completeness
+    * Realism (whether implementation with given budget & tech is possible)
+    * Verifiability (whether the req.s can be tested)
+
+* Techniques:
+    * Reviews (systematic manual analyses)
+        * Both client and contractors should be involved
+        * Formal or informal
+        * Check: Verifiability, comprehensibility, traceability (whether origin of the req. is clear), adaptability (whether the req. can be changed wtihout large impact on other req.s)
+    * Prototyping
+    * Test-case generation
+
+## Requirements Management
+
+* Managing changing req.s during req. engineering and system development
+    * New req.s emerge as system is being developed and after is deployed
+
+* Req.s mng. planning:
+    * Req.s identification: Needed so that a req. can be cross-referenced with other req.s
+    * Change management process: Set of activities to assess impacr & cost of changes
+    * Traceability policies: Define relationships between req.s
+    * Tool support
+
+![reqchg](./img/016-reqchg.jpg)
