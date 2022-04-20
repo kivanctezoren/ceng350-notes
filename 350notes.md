@@ -589,5 +589,33 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 
 * Event-driven models: Shows system's response to external & internal events
     * Most real-time systems are event-driven, minimal data processing
+    * Based on assumption that a system has finite states & events/stimuli cause transition between states
+    * State machine models: Show system's responses to internal & external events
+        ![statediag](./img/020-statediag.jpg)
+        * Statechart in UML are used to represent state machine models
 
+## Model-Driven engineering
 
+* Principal outputs of development are models rather than programs
+    * Programs are later generated from models
+    * Increases abstraction: Engineers no longer have to be concerned with details related to programming languages or execution platforms
+    * Method is still in developments
+    * Cheaper code generation but developing translators for new platforms may be expensive
+
+* Model-driven architecture (MDA): Model a system using a subset of UML modules, at different levels of abstraction, generate implementation from model. In principle, it is possible to generate a working program without manual intervention.
+    * Computation-independent model (CIM) / Domain model: Model important domain abstractions in a system
+    * Platform-independent model (PIM): Model operation without referencing implementation
+        * Usually described using UML to show response to stimuli & static system structure
+    * Platform-specific model (PSM): Transformation of PIMs for specific platforms
+        * Can be layered according to added details
+
+![mda](./img/021-mda.jpg)
+
+* Iterative approach of MDA suggests agile, however up-front modeling contradicts.
+    * Can be used in agile if PIM-to-program transformation can be fully automated
+
+* MDA has limited adoption:
+    * Limited tool availability for model conversion between abstraction levels
+    * The abstractions that are useful for discussions may not be the right abstractions for implementation
+    * For most complex systems, req. eng, security, dependability, backwards compatibility, testing etc. are more significant problems than implementation
+    * Prevalance of agile has diverted attention away from MDA
