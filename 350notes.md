@@ -338,3 +338,55 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
     * "scrum of scrums" are done where representatives of each team meet and discuss progress
 
 
+# Chapter 4 - Requirements Engineering
+
+* Req. eng: Establishing services a customer requires from a system & its operation and development constraints
+
+* System requirements: Desctiptions of the system services & constraints. Generated during requirements engineering.
+
+* "Requirement": Ranges from an abstract statement of a service / system constraint to a detailed functional specification
+    * Dual function: May be the basis for a bid for a contract or for the contract itself
+
+* User requirements: Statements in natural language + diagrams of services & operational constraints
+
+* System requirements: Structured document, detailed descriptions of system functions, services, operational constraints.
+    * Defines things to be implemented -> May be a part of a contract
+
+* Readers of requirements specification types:
+
+![readers](./img/014-readers.jpg)
+
+* "Stakeholder": Any person or organization who is affected by the system in some way and thus has a legitimate interest
+    * End users, system managers, system owners, external stakeholders
+
+* Agile methods use incremental requirements engineering and may express requirements as "user stories"
+    * Practical for business systems
+    * Problematic for systems requiring pre-delivery analysis (e.g critical systems) or systems developed by multiple teams
+
+## Functional & Nonfunc. Requirements
+
+* **Functional requirements:** Statements of system services, describing system's reactions to particular inputs and situations
+    * May state what the system should not do
+    * Depends on SW type, expected users & type of system where the SW is used
+    * Functional user req.s: May be high-level statements of what the system should do
+    * Functional system req.s: describes system services in detail
+
+* **Non-functional requirements:** Constraints on system services or func.s
+    * Timing constraints, development process constraints, standards, etc.
+    * Often apply to the system as a whole, rather than individiual features
+    * May be more critical than functional requirements
+    * A single nonfunc. requirements may generate several related
+    * Product requirements: execution speed, reliability etc.
+    * Organizational requirements: Consequence of organizational policies & procedures (e.g standards, implementation requirements etc.)
+    * External requirements: interoperability requirements, legal requirements etc.
+
+* **Domain requirements:** System constraints from the operation domain
+
+---
+
+* In principle: Requirements should be complete & consistent:
+    * Completeness: include descriptions of all required system facilities
+    * Consistency: No conflicts in the descriptions of the system facilities
+    * Complexity of environment & system -> impossible to produce a complete and consistent requirements document
+
+
