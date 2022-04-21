@@ -65,11 +65,12 @@
 
 * Many different ones but alll involve: Specification, design & implementation, validation, evolution
 
-* "Plan driven process": all activities planned in advance, progress is measured against the plan
+* Approaches:
+    * "Plan driven process": all activities planned in advance, progress is measured against the plan
 
-"Agile process": Incremental planning, easier to change provess to changing requirements
+    * "Agile process": Incremental planning, easier to change process to changing requirements
 
-Often, elements from both approaches are used.
+    * Often, elements from both approaches are used.
 
 ## Software Process Models
 
@@ -401,7 +402,7 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 
 ## Requirements Engineering Process
 
-* An iterative activity in which req. elicititaion, analysis, validation and management are interleaved
+* An iterative activity in which req. elicitation, analysis, validation and management are interleaved
 
 ### Req.s Elicitation / Discovery
 
@@ -412,7 +413,7 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
         * Getting info. from stakeholders about the required & existing systems
             * Interviewing:
                 * closed (pre-determined questions) or open, or mixed
-                * Not good for understanding domain requirements
+                * Not good for understanding domain requirements: Stakeholder can unintentionally overlook them since they are already familiar with the domain
             * Ethnography: Social scientist analyzing how people work
             ![etno](./img/015-etno.jpg)
                 * Important social & organizational factors can be observed
@@ -619,3 +620,134 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
     * The abstractions that are useful for discussions may not be the right abstractions for implementation
     * For most complex systems, req. eng, security, dependability, backwards compatibility, testing etc. are more significant problems than implementation
     * Prevalance of agile has diverted attention away from MDA
+
+# CH6 - Architectural Design
+
+* Concerned with overall structure & organization of a SW system
+    * Results with an "architectural model" identifying relation between system components -> Critical link between design and req.s engineerings
+    * Early stage of agile processes
+
+* Refactoring architecture affects many system components -> expensive
+
+* Architectural abstraction:
+    * Small scale: arch. of individual programs & its components
+    * Large scale: arch. of large systems involving other systems & programs
+
+* Explicit architecture benefits:
+    * Used for discussion & communication with stakeholders
+    * Analyzing system for wherher it can meet its nonfunc. requirements
+    * An architecture can be reused for other systems
+
+* Box & line diagram representations of architecture: Very abstract but good for communication with stakeholders
+
+### Architecture and system characteristics
+
+* Performance: Localize crititcal operations, minimize communications, use "larger" components
+
+* Security: Use layered architecture with critical assets in the inner layers
+
+* Safety: Localise safety-critical features in a small number of sub-systems.
+
+* Availability: Include redundant components and mechanisms for fault tolerance.
+
+* Maintainability: Use replacable components
+
+## Architectural views
+
+* Relate different views using use-cases & scenarios:
+
+    * Logical view: Show key abstractions in the system as objects & object classes
+
+    * Process view: Show how the system is composed of interacting processes at run-time
+
+    * Development view: Show how the SW is decomposed for development
+
+    * Physical view: Show how HW & SW components are distributed across processors in system
+
+* Represent views with UML or architectural description lang.s (ADLs)
+
+## Architectural patterns
+
+* Patterns: means of representing, sharing, reusing knowledge
+    * architectural pattern: stylized description of good design practice, which has been tried and tested in different environments
+    * Should include info. about when they are useful and when they are not
+    * May be represented using tabular & graphical descriptions
+
+### Layered architecture
+
+* Used to model sub-systems interface
+    * Organizes system into a set of "abstract machine" layers
+        * Each provides a set of services
+    * Supports incremental development
+        * A layer changes -> only adjacent layers affected
+    * Example: layers from OS to the user interface
+
+### Repository architecture
+
+![repo](./img/022-repo.jpg)
+
+* Efficient data sharing mechanism when large amounts of data is shared among subsystems
+    * Shared data held in central database instead of each subsystem maintaining their own databases
+
+### Client-server architecture
+
+![csa](./img/023-csa.jpg)
+
+* Distributed system model which shows how data and processing is distributed across a range of components
+    * Can be implemented on a single computer
+    * Set of stand-alone "servers" providing specific services, "clients" calling these services & "network" providing clients access to the servers
+
+### Pipe & Filter architecture
+
+![pfa](./img/024-pfa.jpg)
+
+* Input -> functional transformations -> output
+
+* If transformations are sequential: "batch sequential model", used extensively in data processing systems
+
+* Not very suitable for interactive systems
+
+## Application architectures
+
+* Architecture for a type of system that may be configured and adapted to fulfill specific requirements.
+
+* Used as:
+    * A starting point for architectural design.
+    * A design checklist.
+    * Way of organising the work of the development team.
+    * Means of assessing components for reuse.
+    * To discuss application types.
+
+* Two widely used generic app. architectures:
+    * Transaction processing systems
+
+        ![tm](./img/025-tm.jpg)
+        * Data centered app.s provessing user requests & updating info in a system database
+        * Users make asynchronous requests for service which are then processed by a transaction manager
+        * E-commerce sys.s, reservation sys.s, etc.
+    * Language processing systems
+
+        ![lps](./img/026-lps.jpg)
+        * App.s where user specifies intentions in a formal language, which is processed & interpreted by the system
+        * Compilers, command interpreters etc.
+        * Compiler components:
+            * Lexical analyzer: Converts language tokens to internal form
+            * Symbol table: holds info. about names of entities used in text
+            * Syntax analyzer
+            * Syntax tree: internal structure of the program being compiled
+            * Semantic analyzer: Uses info. from syntax tree & symbol table to check semantic correctness of text
+            * Code generator: "Walk" syntax tree to generate abstract machine code
+
+            Repository compiler architecture:
+
+            ![lps-repo](./img/027-lps-repo.jpg)
+
+            Pipe & filter compiler architecture:
+
+            ![lps-pf](./img/027-lps-pf.jpg)
+    
+### Information systems architecture
+
+* Can be organized in layers
+    * Layers: UI, User communictinos, info. retrieval, system database...
+    * Transaction-based since interaction with these systems generally involves database transactions
