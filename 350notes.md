@@ -744,10 +744,69 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 
             Pipe & filter compiler architecture:
 
-            ![lps-pf](./img/027-lps-pf.jpg)
+            ![lps-pf](./img/028-lps-pf.jpg)
     
 ### Information systems architecture
 
 * Can be organized in layers
-    * Layers: UI, User communictinos, info. retrieval, system database...
+    * Layers: UI, User communications, info. retrieval, system database...
     * Transaction-based since interaction with these systems generally involves database transactions
+
+# CH7 - Design & Implementation
+
+* Implementation: Realizing the design as a program
+
+* Developing a modifiable "off the shelf system": design process is concerned with the configuration features
+
+## Object-Oriented Design With UML
+
+* Involve developing a number of different system models - may not be cost-effective for small systems
+
+* Common activities include:
+
+### 1) Defining system context & interactions
+
+* Defines relationship between software and external environment
+
+* Establishes system boundaries - helps decide which features to implement
+
+* **System context model:** Demonstrates other systems
+
+* **Interaction model:** e.g. Use case model & descriptions
+
+### 2) Designing system architecture
+
+* Organize components in an architectural pattern (e.g. layered, client-server...)
+
+### 3) Identifying object classes
+
+* Relatively difficult & an iterative process
+    * Considering tangible entities & scenerio based analysis (as in use case model) helps
+    * In the system's verbal description: Generally objects & attributes correspond to nouns, operations & services correspond to verbs
+
+### 4) Developing design models
+
+* **Design model:** Shows relations between objects/object classes
+    * **Structural model:** Describes static structure of object classes & relationships
+    * **Dynamic model:** Describes dynamic interactions between objects
+
+#### Examples:
+
+* **Subsystem models:** Show logically related groups of objects
+    * Shown with "packages" in UML
+
+![subsys-model](./img/029-subsys-model.gif)
+
+* **Sequence models:** Show sequence of object interactions
+
+![seq-model](./img/030-seq-model.jpg)
+
+* **State diagrams:** Show objects' response to service requests & triggered state transitions
+    * Useful for modeling run-time behavior
+    * Not needed / Unnecessarily complex for most objects
+
+![state-diag](./img/031-state-diag.jpg)
+
+### 5) Specifying object interfaces
+
+...
