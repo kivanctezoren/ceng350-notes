@@ -879,3 +879,47 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
     * Intention: Cheaper & quicker development and forming a community of users
 
 * Licensing: Open source sofware need not be freely used & manipulated. Restrictions may apply
+
+# CH8 - Software Testing
+
+## Program Testing
+
+* Executing program with artificial data
+
+* **Defect/Verification testing:** Discover possible defects before putting the program into use
+    * Can use deliberately obscure test cases
+    * Does not guarantee absence of errors
+    * "Are we building the product right?"
+
+* **Validation testing:** Demonstrate program to developers & customers
+    * At least one test for each requirement in SRS
+    * "Are we building the right product?"
+
+* Verification & Validation (V&V) confidence dependss on softwaree purpose, user expectations, marketing environment
+    * Early publishing to market is sometimes more important than finding defects
+
+![iat](./img/034-test.jpg)
+
+### Software inspection
+
+* **Software inspection:** static verification, **software testing:** dynamic verification
+
+![iat](./img/035-iat.jpg)
+
+* Doesn't require execution
+
+* Can check conformance with a standard
+
+* Unlike testing, incomplete program can be verified without additional costs
+
+* Unlike testing, cannot check performance, usability etc.
+
+* Both inspections and testing should be used in V&V
+
+---
+
+* Testing stages: Development, release, user testing
+
+### Development Testing
+
+...
