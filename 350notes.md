@@ -1138,4 +1138,29 @@ Also:
 
 ### Dependable Process Activities:
 
+* Requirements reviews to check completeness & consistency
+
+* Req.s management
+
+* Formal specification: Mathematical model of SW
+
+* System modeling: Explicitly documented SW design as graphical models
+
+* Design & program inspections
+
+* Static analysis, automated source code checking
+
+* Test planning & management
+
+### Dependable Processes & Agile
+
+* Conflicts with agile:
+    * Dependable SW usually requires certification, need process and document documentation
+    * Up-front requirements analysis is essential to ensure safety and security
+    * Agile aims to minimize documentation and in agile, requirements are developed along with the system
+
+* Instead of "pure agile" an agile process incorporating techniques (such as iterative development, test-first development, user-developer co-operation) can be used
+
+### Formal methods
+
 ...
