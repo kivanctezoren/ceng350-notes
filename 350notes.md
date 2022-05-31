@@ -1161,6 +1161,31 @@ Also:
 
 * Instead of "pure agile" an agile process incorporating techniques (such as iterative development, test-first development, user-developer co-operation) can be used
 
-### Formal methods
+### Formal methods & Dependability
 
-...
+* Formal methods: Approaches to SW development based on mathematical representation
+
+* Reduces fault count -> main application area is dependable systems engineering
+
+* **Verification-based formal approaches:** Prove different SW system representations and the program implementing it are equal
+
+* **Refinement-based formal approaches:** Systematically transform a system's representation into a lower-level one
+    * e.g. specification -> implementation
+    * If transformation is correct, representations are equivalent
+
+#### Benefits
+
+* Formal specification development requires deatiled req.s analysis -> helps detect req.s problems
+
+* Formal language: allows automatic analysis of specifications
+
+* Formal verification: May reduce program testing costs
+
+---
+
+* Formal methods are impractical:
+    * Stakeholders cannot assess whether formal specifications accurately represent their requierements
+    * Easier to assess costs but harder to assess benefits of formal specification
+    * SW engineers are unfamiliar with formal methods
+    * Hard to upscale for large systems
+    * Not compatible with agile
