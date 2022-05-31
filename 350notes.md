@@ -1057,4 +1057,23 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 
 # CH10 - Dependable Systems
 
+* Dependability: Reflects user's degree of trust in a system
+
+* Failure causes:
+    * Hardware failure
+    * Software failure (erroneous specification, design or implementation)
+    * Operational failure (mistakes by human operators)
+
+## Dependability Properties
+
+![depty](./img/038-depty.jpg)
+
+Also:
+
+* **Repairability:** Extent to which system can be repaired in case of failure
+
+* **Maintainability:** Extent to which system can be adapted to new requirements
+
+* **Error tolerance:** Extent to which system can avoid or tolerate user input errors
+
 ...
