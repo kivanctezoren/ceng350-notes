@@ -916,10 +916,72 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 
 * Both inspections and testing should be used in V&V
 
----
+## Testing stages:
 
-* Testing stages: Development, release, user testing
+## 1) Development Testing
 
-### Development Testing
+### Unit testing
+
+* Testing components individually (for defects)
+
+* Example units:
+    * Functions/Methods of an object
+    * Object classes
+    * Composite components & their interfaces
+
+* Testing object classes: Inheritance is more difficult to test as tested information is not localized
+
+* Should be automated whenever possible
+    * Setup, call, assertion (checking) stages
+
+#### Choosing unit testing cases:
+
+* 2 unit test case types:
+    * Normal operation (usual cases)
+    * Abnormal inputs (edge cases)
+
+* **Partition testing:** Process inputs with similar characterstics together, test inputs from each "equivalence class"
+
+* **Guideline-based testing:** Tests reflecting previous experience, common errors, edge cases
+    * Forcing system to generate all errors
+    * Force input buffer overflow
+    * Repeat same input multiple times
+    * ... etc.
+
+### Component testing
+
+* Testing composite components & showing that the component interface behaves in accordance with specification
+
+* Assume unit tests within component are completed
+
+* Interface types:
+    * **Parameter interfaces:** Passed data between methods/procedures
+
+    * **Shared memory intercafes:** Block of memory shared among methods/procedures
+
+    * **Procedural interfaces:** Encapsulated procedure set of a sub-system to be called by other sub-systems
+
+    * **Message passing interfaces**: Service requests among sub-systems
+
+* Interface errors:
+    * **Interface misuse:** A component calls another component erroneously
+
+    * **Interface misunderstanding:** A caller component makes wrong assumptions about the called component
+
+    * **Timing errors:** Caller and called components operate at different speeds and out-of-date or premature information is accessed
+
+### System testing
+
+* Integrate components to create a system version & test it
+    * Teams developing different components may come toghether for testing. Some companies have separate testing teams for system testing
+
+* Test interaction and compatibility between components
+    * "Emergent behavior" of the system
+
+* Use-cases can be used as a basis as they usually force component interaction
+
+* Exhaustive testing is impractical: Policies defining test coverages may be developed
+
+### Test-driven Development
 
 ...
