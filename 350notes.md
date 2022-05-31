@@ -1076,4 +1076,19 @@ Also:
 
 * **Error tolerance:** Extent to which system can avoid or tolerate user input errors
 
-...
+* Dependability costs increase exponentially as required dependability level increases
+    * V&V is expensive
+    * Dependability can be compromised depending on social & political factors
+
+## Sociotechnical Systems
+
+* Software systems are components of broader systems with social & organizational purpose
+
+* ![socsys](./img/039-socsys.jpg)
+    * Equipment: HW
+    * Communications & data mgmt.: Middleware providing access to db.
+    * Application systems: Specific functionality to meet some organization requirements.
+    * Society: Laws, regulation, culture affecting operation of the system
+
+
+
