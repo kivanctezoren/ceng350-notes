@@ -16,6 +16,8 @@
 
 [CH10 - Dependable Systems](#ch10---dependable-systems)
 
+[CH11 - Reliability Engineering](#ch11---reliability-engineering)
+
 ---
 
 # CH1 - Introduction
@@ -1189,3 +1191,48 @@ Also:
     * SW engineers are unfamiliar with formal methods
     * Hard to upscale for large systems
     * Not compatible with agile
+
+# CH11 - Reliability Engineering
+
+* System faults do not necessarliy result in system errors
+    * Faults may be transient
+    * Faulty code portion may never be executed
+    * Removing a fault not necessariy improves system reliability
+
+* Errors do not necessarily lead to system failures
+    * Error can be corrected by built-in error detection and recovery 
+    * Built-in protection facilities can prevent failure
+
+* Achieving reliability:
+    * **Fault avoidance:** Use development techniques to minimise possibility of mistakes or "trap" them before a system fault
+
+    * **Fault detection & removal:** Use V&V to increase fault detection & removal probability before deployment
+
+    * **Fault tolerance** Use runtime techniques to ensure fault do not resutl in errors, or errors do not reult in system failures
+
+* Exponential fault removal costs
+
+## Availability & Reliability
+
+* Can be quantitatively expressed
+
+* **Reliability:** Probability of no failures for a given time, environment and purpose
+
+* **Availability:** At a given time, probability of a system to deliver requested services
+
+### Reliability perception
+
+* Formal reliability description may not reflect user's perception of reliablitty
+    * Assumptions about user's environment may not hold
+    * Perceived reliability is more important in practice
+
+* Users adapt their behavior to avoid system features that may fail for them
+
+### Availability perception
+
+* Expressed as a percentage
+* Does not consider service outage length or number of affected users
+
+## Reliability Requirements
+
+...
