@@ -1,18 +1,20 @@
-[CH1](#ch1---introduction)
+[CH1 - Introduction](#ch1---introduction)
 
-[CH2](#ch2---software-processes)
+[CH2 - Software Processes](#ch2---software-processes)
 
-[CH3](#ch3---agile-sw-development)
+[CH3 - Agile SW Development](#ch3---agile-sw-development)
 
-[CH4](#ch4---requirements-engineering)
+[CH4 - Requirements Engineering](#ch4---requirements-engineering)
 
-[CH5](#ch5---system-modeling)
+[CH5 - System Modeling](#ch5---system-modeling)
 
-[CH6](#ch6---architectural-design)
+[CH6 - Architectural Design](#ch6---architectural-design)
 
-[CH7](#ch7---design--implementation)
+[CH7 - Design & Implementation](#ch7---design--implementation)
 
-[CH8](#ch8---software-testing)
+[CH8 - Software Testing](#ch8---software-testing)
+
+[CH10 - Dependable Systems](#ch10---dependable-systems)
 
 ---
 
@@ -1027,5 +1029,32 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 * Shows system delivers its specified functionality, performance and dependability, does not fail during normal use
 
 * Usually black-box where tests are derived from system specification
+
+* **Requirements-based testing:** Examine each requirement & develop test/s for them
+
+* **Scenario testing:** Devise usage scenarios & use them to develop tests
+
+* **Performance testing:** Testing emergent properties of system (e.g performance, reliability)
+    * Steadily increase load until performance becomes unacceptable
+    * Stress testing: Deliberately overload system to test failure behavior
+
+## 3) User testing
+
+* Users / customers provide input & system testing advice
+
+* Essential since influences from user's working environment cannot be exactly replicated in a testing environment
+    * User's environment affects reliability, performance, usability, robustness of a system
+
+* **Alpha testing:** Users and developers work together
+
+* **Beta testing:** A release is available to the users for them to experiment with and raise problems to developers
+
+* **Acceptance testing:** Customers test whether system can be accepted from system dev.s & deployed.
+    * Primarily for custom systems
+    ![acctest](./img/037-acctest.jpg)
+    * In agile: Tests are defined by the user/customer. No separate acceptance testing process
+        * Main problem is whether the user working with the team can represent a general user
+
+# CH10 - Dependable Systems
 
 ...
