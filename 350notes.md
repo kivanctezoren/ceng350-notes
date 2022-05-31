@@ -1090,5 +1090,19 @@ Also:
     * Application systems: Specific functionality to meet some organization requirements.
     * Society: Laws, regulation, culture affecting operation of the system
 
+* **Holistic ("bütünsel") system design:** Consider other layers of socio-tehnical system for dependability. A failure in a layer should not propogate to others
+
+### Regulation & compliance
+
+* Companies developing safety-critical systems (e.g. nuclear systems, medical devices, air traffic systems) have to produce an extensive safety case showing that regulations are followed
+    * Sometimes as expensive to prepare documentation as to develop system itself
+
+## Redundancy & diversity
+
+* **Redundancy:** Keep multiple versions of critical components for backup
+
+* **Diversity:** Provide same functionality in multiple ways to lower chance of failure in the same way
+
+* Redundant and diverse components should be independent to avoid common ("ortak") failures
 
 
