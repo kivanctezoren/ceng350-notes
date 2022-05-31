@@ -807,6 +807,75 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 
 ![state-diag](./img/031-state-diag.jpg)
 
+* Also use case models, aggregation models, generalisation models... etc
+
 ### 5) Specifying object interfaces
 
-...
+* Specifying interafaces allows designing objects in parallel
+
+* UML: Class diagrams
+
+![class-diag](./img/032-class-diag.jpg)
+
+## Design Patterns
+
+* Ways of reusing abstract knowledge: a description of a problem and the essence of its solution
+
+* Consists of:
+    * Name
+    * Problem description
+    * Solution description (as a template for design)
+    * Consequences (& trade-offs)
+
+* Pattern examples: Observer, Façade, Iterator, Decorator...
+
+## Implementation Issues
+
+### Reuse
+
+* Existing code should be used as much as possible
+
+* Reuse costs:
+    * **Searching** for reusable software
+    * **Buying** reusable software
+    * **Adaptation** of reusable software
+    * **Integrating** reusable software with each other
+
+#### Reuse levels
+
+* **Abstraction level:** Reuse knowledge of successful abstractions
+
+* **Object level:** Reuse objects from an existing library
+
+* **Component level:** Reuse collections of objects & object classes
+
+* **System level:** Reuse entire application systems
+
+### Configuration management
+
+* Supporting the system integration process so that all developers can access the project code and documents in a controlled way, find out what changes have been made, and compile and link components to create a system
+
+
+#### Config. man. activities
+
+* Version management
+* System integration (Define versions of used components)
+* Problem tracking
+* Release management
+
+### Host-Target Development
+
+* Consider development & execution platform differences
+    * Sometimes more or less the same (e.g. Java Virtual Machine)
+    * Sometimes different (e.g embedded systems): Need simulations & testing
+
+![htdev](./img/033-htdev.jpg)
+
+## Open Source Developnent
+
+* Avaliable source & volunteers are invited do particitpate in development
+
+* Open source business: Selling support for software rather than software product itself
+    * Intention: Cheaper & quicker development and forming a community of users
+
+* Licensing: Open source sofware need not be freely used & manipulated. Restrictions may apply
