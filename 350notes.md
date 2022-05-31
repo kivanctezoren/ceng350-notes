@@ -1105,4 +1105,37 @@ Also:
 
 * Redundant and diverse components should be independent to avoid common ("ortak") failures
 
+* Redundancy & diversity in process activities: Activities such as V&V should depend on multiple approaches: Provides "cross-checking" and avoids development process errors
+    * e.g Use testing, manual inspections, static analysis together for verification (fault finding)
 
+### Disadvantages
+
+* R&D increases system complexity
+
+* Increases chances of error - unanticipated interactions & dependencies possible between redundant components
+
+* Some advocate simplicity & extensice V&V instead of R&D
+
+## Dependable Processes
+
+* Software processes designed to produce dependable software
+
+### Dependable Process Characteristics:
+
+* **Well-defined:** A model is explicitly defined & it is shown that the team follows the process model
+
+* **Repeatable:** does not depend on individual skills, can be applied by different peoples
+
+* **Auditable:** Understandable by outsiders who check whether standards are followed & make suggestions to improve the process
+
+* **Diverse:** Should include R&D activities for V&V
+
+* **Documentable**
+
+* **Robust:** Able to recover from errors
+
+* **Standardized:** SW development standards covering SW production & documentation should be available
+
+### Dependable Process Activities:
+
+...
