@@ -1002,4 +1002,30 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 
 ### Test-driven Development
 
+* Write tests before increments, aim to pass tests during development. Do not move on to next increment until test is passed
+    * Introduced as part of agile
+![tdd](./img/036-tdd.jpg)
+
+#### Benefits
+
+* **Code coverage:** every code segment is tested at least once
+
+* **Regression testing:** Test suite is developed incrementally with the program - It can always be checked whether new code introduces new bugs
+
+* **Simplified debugging**
+
+* **System documentation:** Tests form a documentation describing what the code should be doing
+
+## 2) Release Testing
+
+* Testing a release which is for outside development team
+
+* A form of system testing, except:
+    * A team separate than development team should be responsible for testing
+    * System testing focuses on verification, release testing focuses on validation
+
+* Shows system delivers its specified functionality, performance and dependability, does not fail during normal use
+
+* Usually black-box where tests are derived from system specification
+
 ...
