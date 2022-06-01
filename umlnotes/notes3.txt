@@ -1,0 +1,44 @@
+class diagram:
+    a type of structural UML diagram
+    for each class: attributes and operations
+    camelCase for attributes and op.s
+    +attrName: Type 
+    +opName(type1, type2, ...): ReturnType
+        visibility:
+            + means public (accessible by anyone)
+            - means private (accessible only by class itself)
+            # means protected (accessible only by class itself or its children)
+            ~ means package (accessible only by classes in the same package)
+    need to indicate many-to-many, one-to-one... etc relationships in association
+        1-1: 1 --- 1
+        many-to-many: 1..* --- 1..*
+        other intervals possible: 4..* - 0..5 etc
+    aggregation: a "weak relationship", stronger than association? a special type of whole-part relationship between two classes: a part can exist separately from the whole
+        e.g a student can exist without an university: student ---< > university
+            if it couldn't: use "composition" instead
+                e.g room --<#> building, web browser --<#> tab
+
+    generalization: base class <-- derived/child/subclass(es)  (white arrow)
+    "abstract class": <<ClassName>> (italicized)
+        a type of base class which cannot be instantiated without being derived. only children objects can be created.
+        must have at least one abstract method
+
+state / state chart / state machine diagram:
+    can be created for entire systems or just a part of it
+    contains state trainsitions and "triggers"
+    special behaviors triggered on some predefined events:
+        "entry behavior": executed immediately on state entry
+        "exit behavior": executed just before exiting state
+        "do behavior": executed while state is active    
+    init --trigger-> state --trigger-> ... --> final
+    transition: source state -- trigger [guard] /Effect --> target state
+        trigger: cause of transition (signal, condition change etc.)
+        guard: must be true for transition
+        effect: done on the object owning the state machine upon transition
+    self states: transitions into itself
+    compound state: contains init, final, and other state(s) within, possibly with conditions etc.
+    composite state: representation of multiple linked states as a single state, for simplicity
+    choice & junction pseudo-states: connects multiple in&out states according to conditions
+    history state: has a H symbol. a compound state which "remembers" the inner state when the outer state is exited and re-entered.
+    concurrent state: concurrent state representing multiple states at once
+

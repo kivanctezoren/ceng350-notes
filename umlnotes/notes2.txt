@@ -1,0 +1,28 @@
+sequence diagram:
+    drawn when multiple objects act toghether.
+    shows a sequence of events.
+    drawn only for a single actor.
+    when drawing: determine actor first, then the related objects.
+    "message": requires at least one reply message from the receiver
+    "async. message": does not require reply
+    reply messages have dashed arrows.
+    "create/delete message": if a message creates/deletes an object. probably won't use
+    decisions in the reply message(s): indicated by the "guard" fields of the messages ("OK" & "Not OK" etc.)
+    bottom to top: chronological order (also indicated by the message id. numbers), left to right: object action order.
+    "activation rectangles": shows the time period in which the object is active.
+    any arrow (message, async messge, reply etc) can be from right to left too.
+
+activity diagram:
+    models workflow similar to a flowchart - concurrent, branched, sequential activities. activities are simply the functions of the systems.
+    can be drawn for only one actor. usually drawn for only one use case.
+    4 parts are need to be declared: activities, association between activities, conditions, (if any) constraints/limitations.
+    start with init node, end with final node.
+    "action": indicated by rounded rectangle
+    "activity": >= 1 actions. indicated by a larger rounded rectangle
+        no real distinction between action and acitivity in starUML.
+    "decision node": also requires a "merge node" to combine decisions
+        conditions are indicated by "guard" fields
+    "fork node": indicates parallel work. also requires a "join node" later.
+    "swimlane diagram": groups activities carried out by the same actors in the same "partitions". horizontal or vertical possible.
+
+in SRS: choose most complex 3 use cases. draw sequence diag. for one, activity diag. for another, and state diag. for the last one.

@@ -1,0 +1,12 @@
+* one process? ("center node") per diagram
+* functional requirements: requirements that a user expects to see / make use of in the software
+    * use case diagram: problem statementtan çıkar?
+        * primary actor(s): left
+          secondary actor(s): right
+        * a "logical order" of operations from top to down
+        * start with bare verb in use cases
+        * A --include--> B : Whenever A is done, B is done too ("included in the use case")
+        * A <--extend-- B : Whenever A is done, B may or may not be done (only sometimes done)
+        * Generalization:
+            A <-- B : A is a generalization of B. OOP analogy: A is the "parent class", B is the "derived class"
+            A, B may be use cases, actors...
