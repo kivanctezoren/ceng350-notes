@@ -917,7 +917,7 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
     * At least one test for each requirement in SRS
     * "Are we building the right product?"
 
-* Verification & Validation (V&V) confidence dependss on softwaree purpose, user expectations, marketing environment
+* Verification & Validation (V&V) confidence depends on software purpose, user expectations, marketing environment
     * Early publishing to market is sometimes more important than finding defects
 
 ![iat](./img/034-test.jpg)
@@ -1116,7 +1116,7 @@ Also:
 
 * Increases chances of error - unanticipated interactions & dependencies possible between redundant components
 
-* Some advocate simplicity & extensice V&V instead of R&D
+* Some advocate simplicity & extensive V&V instead of R&D
 
 ## Dependable Processes
 
@@ -1126,7 +1126,7 @@ Also:
 
 * **Well-defined:** A model is explicitly defined & it is shown that the team follows the process model
 
-* **Repeatable:** does not depend on individual skills, can be applied by different peoples
+* **Repeatable:** does not depend on individual skills, can be applied by different people
 
 * **Auditable:** Understandable by outsiders who check whether standards are followed & make suggestions to improve the process
 
@@ -1183,14 +1183,15 @@ Also:
 
 * Formal verification: May reduce program testing costs
 
----
+### Drawbacks
 
 * Formal methods are impractical:
     * Stakeholders cannot assess whether formal specifications accurately represent their requierements
-    * Easier to assess costs but harder to assess benefits of formal specification
     * SW engineers are unfamiliar with formal methods
     * Hard to upscale for large systems
     * Not compatible with agile
+
+* Easier to assess costs but harder to assess benefits of formal specification
 
 # CH11 - Reliability Engineering
 
