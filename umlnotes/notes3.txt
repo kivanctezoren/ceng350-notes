@@ -16,7 +16,7 @@ class diagram:
     aggregation: a "weak relationship", stronger than association? a special type of whole-part relationship between two classes: a part can exist separately from the whole
         e.g a student can exist without an university: student ---< > university
             if it couldn't: use "composition" instead
-                e.g room --<#> building, web browser --<#> tab
+                e.g room --<#> building, tab --<#> web browser
 
     generalization: base class <-- derived/child/subclass(es)  (white arrow)
     "abstract class": <<ClassName>> (italicized)
@@ -25,7 +25,7 @@ class diagram:
 
 state / state chart / state machine diagram:
     can be created for entire systems or just a part of it
-    contains state trainsitions and "triggers"
+    contains state transitions and "triggers"
     special behaviors triggered on some predefined events:
         "entry behavior": executed immediately on state entry
         "exit behavior": executed just before exiting state

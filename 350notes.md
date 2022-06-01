@@ -893,7 +893,7 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 
 ![htdev](./img/033-htdev.jpg)
 
-## Open Source Developnent
+## Open Source Development
 
 * Avaliable source & volunteers are invited do particitpate in development
 
