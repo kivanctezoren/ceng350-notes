@@ -657,7 +657,7 @@ Agile approach: focus on iterative development & reduction of overheads. Emphasi
 
 * Explicit architecture benefits:
     * Used for discussion & communication with stakeholders
-    * Analyzing system for wherher it can meet its nonfunc. requirements
+    * Analyzing system for whether it can meet its nonfunc. requirements
     * An architecture can be reused for other systems
 
 * Box & line diagram representations of architecture: Very abstract but good for communication with stakeholders
